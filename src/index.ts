@@ -1,5 +1,5 @@
-import { add, listAllBuckets } from "./lib/mylib";
-import S3 from "aws-sdk/clients/s3";
+import { add, listAllBuckets } from "./lib/mylib.js";
+import S3 from "aws-sdk/clients/s3.js";
 
 
 console.log('init, cound to 3');

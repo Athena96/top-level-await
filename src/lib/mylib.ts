@@ -1,5 +1,5 @@
 
-import S3, { Bucket } from "aws-sdk/clients/s3";
+import S3, { Bucket } from "aws-sdk/clients/s3.js";
 
 export function add(num: number, num2: number) {
     return num + num2;
