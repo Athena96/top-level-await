@@ -10,9 +10,10 @@
         "test": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js"
     },
     "jest": {
+        "collectCoverage": true,
         "preset": "ts-jest/presets/default-esm",
         "modulePathIgnorePatterns": [
-            "<rootDir>/dist/",
+            "<rootDir>/src/",
             "<rootDir>/node_modules/"
         ],
         "extensionsToTreatAsEsm": [
@@ -20,7 +21,8 @@
         ],
         "globals": {
             "ts-jest": {
-                "useESM": true
+                "useESM": true,
+                "diagnostics": false
             }
         }
     },
